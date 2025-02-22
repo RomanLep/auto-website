@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(33, 33, 33);
+    font-family: "Nunito", serif;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+.main__card-car{
+    width: 750px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #6d6d6d;
+}
+
+.card-car__container__left{
+    display: flex;
+}
+
+.card-car__img{
+    width: 270px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 1em;
+    margin-right: 20px;
+}
+
+
+
+.card-car__name{
+    color: #fff;
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.card-car__price{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 66px;
+}
+
+.card-car__btn-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-car__btn-left{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+}
+
+.card-car__btn-text{
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.card-car__about{
+    display: flex;
+    justify-content: end;
+}
+
+.card-car__about-text{
+    color: #fff;
+}
+
+
+
+.card__container__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-car__btn-right{
+    width: 120px;
+    height: 36px;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.card-car__about{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.card-car__about-container{
+    display: flex;
+    gap: 12px;
+    border: 1px solid #6d6d6d;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+}
+
