@@ -18,6 +18,14 @@ li{
     list-style: none;
 }
 
+.main{
+    max-width: 1288px;
+    padding-inline: 24px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .main__card-car{
     width: 750px;
     height: 230px;
