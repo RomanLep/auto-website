@@ -6,8 +6,9 @@
 }
 
 body{
-    background-color: rgb(33, 33, 33);
+    background-color: #1b1b1b;
     font-family: "Nunito", serif;
+    padding-inline: 4%;
 }
 
 ul{
@@ -16,6 +17,55 @@ ul{
 
 li{
     list-style: none;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.header__logo-img{
+    max-width: 190px;
+}
+
+.header__ul{
+    display: flex;
+    gap: 40px;
+}
+
+.header__a{
+    text-decoration: none;
+    color: #a9a9a9;
+}
+.header__a:hover{
+    color: #e2e2e2;
+}
+
+.header__container{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.header__tel{
+    color: #e2e2e2;
+    font-size: 16px;
+}
+
+.header__btn{
+    background-color: #fff;
+    font-family: "Nunito", serif;
+    width: 120px;
+    height: 36px;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 50px #c1c1c1;
+    border: none;
 }
 
 .main{
