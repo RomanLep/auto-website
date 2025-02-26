@@ -18,17 +18,17 @@ const car = {
     "baggage": "7"
 };
 
-// сделать картинки в обькте и тд
 const renderingCardCar = (car) => {
     cardsList.insertAdjacentHTML("beforeend", `
         <li class="main__card-car">
+            <div class="main__all__card">
                 <div class="card-car__container__left">
                     <img class="card-car__img" src="${car.img}" alt="${car.model}">
                     <div class="card-car__container__text&btn">
                         <h2 class="card-car__name">${car.model}</h2>
                         <h3 class="card-car__price">${car.price}</h3>
                         <div class="card-car__btn-container">
-                            <button class="card-car__btn-left btn">
+                            <button class="card-car__btn-left" id="btnMoreInfo">
                                 <svg fill="#000000" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.011 512.011" xml:space="preserve">
                                     <g>
                                         <g>
@@ -45,7 +45,7 @@ const renderingCardCar = (car) => {
                 </div>
 
                 <div class="card__container__right">
-                    <button class="card-car__btn-right btn">Select</button>
+                    <button class="card-car__btn-right">Select</button>
                     <ul class="card-car__about">
                         <li class="card-car__about-container">
                             <div class="card-car__about-text">${car.seats}</div>
@@ -60,7 +60,10 @@ const renderingCardCar = (car) => {
                         </li>
                     </ul>
                 </div>
-            </li>
+            </div>
+            
+            <div class="main__infoCar" id="infoCar"></div>
+        </li>
         `)
 };
 
