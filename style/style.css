@@ -54,6 +54,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
     padding-inline: 4%;
 }
 
@@ -81,6 +82,98 @@ body{
     font-weight: 300;
 }
 
+.main__choice-cards-car{
+    display: flex;
+    gap: 30px;
+}
+
+
+.main__choice-configuration{
+    background-color: #3e3e3e;
+    border-radius: 1em;
+    padding: 20px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__text-configuration--h2{
+    color: #fff;
+    font-size: 18px;
+}
+
+.main__text-configuration-together{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px dashed #6d6d6d;
+    padding-bottom: 16px;
+}
+
+
+.main__text-configuration--h3{
+    color: #6d6d6d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main__text-configuration--h4{
+    color: #a9a9a9;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main__text-calculations{
+    display: flex;
+    gap: 12px;
+}
+
+.main__text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main__text-calculations-result{
+    color: #c1c1c1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin-top: 16px;
+    padding: 16px 0;
+    border-top: 1px dashed #6d6d6d;
+}
+
+.main__text-calc{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main__price-calc{
+    font-size: 14px;
+}
+
+
+.main__more-info{
+    background-color: #3e3e3e;
+    width: 750px;
+    color: #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 1em;
+}
+
+.main__more-info-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2px;
+    border-bottom: 1px dashed;
+}
+
+
 .main__card-car{
     display: flex;
     flex-direction: column;
@@ -91,8 +184,8 @@ body{
     height: 230px;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 40px;
     border-bottom: 2px dashed #6d6d6d;
 }
 
@@ -159,6 +252,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .card-car__btn-right{
@@ -187,7 +281,7 @@ body{
 
 .main__btn-container{
     width: 100%;
-    height: 200px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
