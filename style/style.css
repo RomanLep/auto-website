@@ -160,10 +160,24 @@ body{
     width: 750px;
     color: #a9a9a9;
     display: flex;
+    max-height: 0;
+    overflow: hidden;
     flex-direction: column;
     gap: 10px;
-    padding: 16px;
+    padding-inline: 16px;
     border-radius: 1em;
+    opacity: 0;
+    transition: max-height 0.3s, padding 0.3s, opacity 0.3s;
+}
+
+.main__card-car.card--open .main__more-info{
+    max-height: 500px;
+    padding-block: 16px;
+    opacity: 1;
+}
+
+.main__card-car.card--open .card-car__btn-left{
+    transform: rotate(180deg);
 }
 
 .main__more-info-container{
@@ -177,16 +191,15 @@ body{
 .main__card-car{
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
+    gap: 20px;
+    border-bottom: 2px dashed #6d6d6d;
 }
 
 .main__all__card{
     width: 750px;
-    height: 230px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-    border-bottom: 2px dashed #6d6d6d;
 }
 
 .card-car__container__left{
@@ -229,6 +242,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s;
 }
 
 .card-car__btn-text{
@@ -252,7 +266,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 .card-car__btn-right{
@@ -347,6 +361,7 @@ body{
 
 .footer__container__all{
     padding-inline: 12%;
+    position: relative;
 }
 
 .footer__container{
@@ -440,6 +455,9 @@ body{
 }
 
 .footer__btn--rug{
+    position: absolute;
+    bottom: -36px;
+    right: 110px;
     width: 70px;
     height: 70px;
     background-color: #fff;
@@ -469,4 +487,10 @@ body{
     align-items: center;
     height: 90px;
     font-weight: 400;
+}
+
+.main__cards-car{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }

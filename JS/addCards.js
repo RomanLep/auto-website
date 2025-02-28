@@ -1,25 +1,27 @@
-const API_URL = "http://localhost:5000/auto"
+const API_URL = "http://localhost:5000/auto";
 
-const cardsList = document.querySelector("#cards-list")
+const cardsList = document.querySelector("#cards-list");
 
 const car = {
-    "id": "1", 
-    "model": "Mercedes-Benz V-class", 
-    "color": "black", 
-    "availability": "Yes",
-    "yearOfIssue": "2024",
-    "mileage": "9 473 km",
-    "gearbox": "automatic",
-    "steeringWheel": "left",
-    "body": "minivan",
-    "img": "./img/Mercedes-Benz_V-class.png",
-    "price": "$445.00",
-    "seats": "7",
-    "baggage": "7"
+    id: "1",
+    model: "Mercedes-Benz V-class",
+    color: "black",
+    availability: "Yes",
+    yearOfIssue: "2024",
+    mileage: "9 473 km",
+    gearbox: "automatic",
+    steeringWheel: "left",
+    body: "minivan",
+    img: "./img/Mercedes-Benz_V-class.png",
+    price: "$445.00",
+    seats: "7",
+    baggage: "7",
 };
 
 const renderingCardCar = (car) => {
-    cardsList.insertAdjacentHTML("beforeend", `
+    cardsList.insertAdjacentHTML(
+        "beforeend",
+        `
         <li class="main__card-car">
             <div class="main__all__card">
                 <div class="card-car__container__left">
@@ -28,7 +30,7 @@ const renderingCardCar = (car) => {
                         <h2 class="card-car__name">${car.model}</h2>
                         <h3 class="card-car__price">${car.price}</h3>
                         <div class="card-car__btn-container">
-                            <button class="card-car__btn-left" id="btnMoreInfo">
+                            <button class="card-car__btn-left">
                                 <svg fill="#000000" height="10px" width="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.011 512.011" xml:space="preserve">
                                     <g>
                                         <g>
@@ -61,10 +63,39 @@ const renderingCardCar = (car) => {
                     </ul>
                 </div>
             </div>
-            
-            <div class="main__infoCar" id="infoCar"></div>
+            <ul class="main__more-info">
+                    <li class="main__more-info-container">
+                        <h3>Availability:</h3>
+                        <h3>Yes</h3>
+                    </li>
+                    <li class="main__more-info-container">
+                        <h3>Year of issue:</h3>
+                        <h3>2024</h3>
+                    </li>
+                    <li class="main__more-info-container">
+                        <h3>Mileage:</h3>
+                        <h3>9 473 km</h3>
+                    </li>
+                    <li class="main__more-info-container">
+                        <h3>Color:</h3>
+                        <h3>Black</h3>
+                    </li>
+                    <li class="main__more-info-container">
+                        <h3>Gearbox:</h3>
+                        <h3>Automatic</h3>
+                    </li>
+                    <li class="main__more-info-container">
+                        <h3>Steering wheel:</h3>
+                        <h3>Left</h3>
+                    </li>
+                    <li class="main__more-info-container">
+                        <h3>Body:</h3>
+                        <h3>Minivan</h3>
+                    </li>
+                </ul>
         </li>
-        `)
+        `
+    );
 };
 
 const getCarData = async (url) => {
@@ -81,6 +112,16 @@ const start = async (url) => {
         const car = cars[i];
         renderingCardCar(car);
     }
+
+    const moreBtns = document.querySelectorAll(".card-car__btn-left");
+
+    moreBtns.forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+            const currentBtn = event.currentTarget;
+            const cardCar = currentBtn.closest(".main__card-car");
+            cardCar.classList.toggle("card--open");
+        });
+    });
 };
 
 start(API_URL);
