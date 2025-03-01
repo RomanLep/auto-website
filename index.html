@@ -1,208 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIMOCROUP</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon_logo.jpg">
-    <link rel="stylesheet" href="./style/resetStyles.css">
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-    <header class="header">
-        <a class="logo" href="/">
-            <img class="header__logo-img" src="./img/logo_black.png" alt="LIMOGROUP">
-        </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LIMOCROUP</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon_logo.jpg" />
+        <link rel="stylesheet" href="./style/resetStyles.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="logo" href="/">
+                <img
+                    class="header__logo-img"
+                    src="./img/logo_black.png"
+                    alt="LIMOGROUP"
+                />
+            </a>
 
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li">
-                    <a class="header__a" href="/">Home</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="/">About Us</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="/">Our Services</a>
-                </li>
-                <li class="header__li">
-                    <a class="header__a" href="/">Fleets</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="header__container">
-            <a class="header__tel" href="tel:+12 34 567 89 00">+12 34 567 89 00</a>
-
-            <form class="header__language-selection">
-                <select id="header__lang-sel">
-                  <option value="english">ENG</option>
-                  <option value="russian">RUS</option>
-                </select>
-            </form>
-
-            <button class="header__btn">Contact Us</button>
-        </div>
-    </header>
-
-    <main class="main">
-        <div class="main__img__text-container">
-            <h2 class="main__text--h2">Booking</h2>
-            <h3 class="main__text--h3">HOME-BOOKING</h3>
-        </div>
-
-        <div class="main__choice-cards-car">
-            <div class="main__all__choice-configuration">
-                <ul class="main__choice-configuration">
-                    <li class="main__li__text-configuration--h2">
-                        <h2 class="main__text-configuration--h2">Summary</h2>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li">
+                        <a class="header__a" href="/">Home</a>
                     </li>
-    
-                    <li class="main__text-configuration-together">
-                        <h3 class="main__text-configuration--h3">SERVICE TYPE</h3>
-                        <h4 class="main__text-configuration--h4">Hourly</h4>
+                    <li class="header__li">
+                        <a class="header__a" href="/">About Us</a>
                     </li>
-    
-                    <li class="main__text-configuration-together">
-                        <h3 class="main__text-configuration--h3">PICKUP LOCATION</h3>
-                        <h4 class="main__text-configuration--h4">Switzerland Park, Chandragiri</h4>
+                    <li class="header__li">
+                        <a class="header__a" href="/">Our Services</a>
                     </li>
-    
-                    <li class="main__text-configuration-together">
-                        <h3 class="main__text-configuration--h3">DROP OFF LOCATION</h3>
-                        <h4 class="main__text-configuration--h4">Switzerland Park, Chandragiri</h4>
+                    <li class="header__li">
+                        <a class="header__a" href="/">Fleets</a>
                     </li>
-    
-                    <li class="main__text-configuration-together">
-                        <h3 class="main__text-configuration--h3">PICKUP DATE, TIME</h3>
-                        <h4 class="main__text-configuration--h4">17-05-2025, 8:00</h4>
-                    </li>
-    
-                    <li class="main__text-calculations">
-                        <div class="main__text-container">
-                            <h3 class="main__text-configuration--h3">TOTAL DISTANCE</h3>
-                            <h4 class="main__text-configuration--h4">0 km</h4>
-                        </div>
-    
-                        <div class="main__text-container">
-                            <h3 class="main__text-configuration--h3">TOTAL TIME</h3>
-                            <h4 class="main__text-configuration--h4">7 h 0 m</h4>
-                        </div>
-                    </li>
-                    
                 </ul>
+            </nav>
 
-                <div class="main__text-calculations-result">
-                    <h2 class="main__text-calc">Total</h2>
-                    <h2 class="main__price-calc">$450.00</h2>
-                </div>
-            </div>
-            
-            <ul class="main__cards-car" id="cards-list"></ul>
-        </div>
+            <div class="header__container">
+                <a class="header__tel" href="tel:+12 34 567 89 00"
+                    >+12 34 567 89 00</a
+                >
 
-        <div class="main__btn-container">
-            <button class="main__btn-left main__btn">
-                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" fill="#0F0F0F"/>
-                </svg>
-                <h2 class="main__btn-text-left">Choose Ride Details</h2>
-            </button>
-            <button class="main__btn-right main__btn">
-                <h2 class="main__btn-text-right">Enter Contact Detals</h2>
-                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" fill="#0F0F0F"></path> </g></svg>
-            </button>
-        </div>
-
-        <div class="main__partners-container">
-            <a href="/">
-                <img class="main__img-partner" src="./img/Chopard.jpg" alt="Chopard GENEVE">
-            </a>
-            <a href="/">
-                <img class="main__img-partner" src="./img/Geneve.jpg" alt="GENEVE AEROPORT">
-            </a>
-            <a href="/">
-                <img class="main__img-partner" src="./img/Emirates.jpg" alt="Emirates">
-            </a>
-            <a href="/">
-                <img class="main__img-partner" src="./img/Iwc.jpg" alt="IWS SCHAFFHAUSEN">
-            </a>
-            <a href="/">
-                <img class="main__img-partner" src="./img/Cartier.jpg" alt="Cartier">
-            </a>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__container__all">
-            <div class="footer__btn--rug">
-                <a class="footer__btn-up" id="btnUp" href="#">
-                    <img class="footer__btn-up__img" src="./img/arrow-up.png" alt="">
-                </a>
-            </div>
-
-            <div class="footer__container">
-                <form class="footer__form">
-                    <h2 class="form__text--h2">Subscribe our newsletter</h2>
-                    <h3 class="form__text--h3">Want to know about our offers first?</h3>
-                    <div class="footer__input-container">
-                        <input class="footer__input" type="email" placeholder="example@gmail.com">
-                        <button class="footer__btn-subscribe">Subscribe</button>
-                    </div>
+                <form class="header__language-selection">
+                    <select id="header__lang-sel">
+                        <option value="english">ENG</option>
+                        <option value="russian">RUS</option>
+                    </select>
                 </form>
-        
-                <div class="footer__img__text-container">
-                    <a class="logo" href="/">
-                        <img class="footer__logo-img" src="./img/logo_white.png" alt="LIMOCROUP">
-                    </a>
-        
-                    <ul class="footer__text-container">
-                        <li>
-                            <a class="footer__text-a" href="/">Legal</a>
+
+                <button class="header__btn">Contact Us</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__img__text-container">
+                <h2 class="main__text--h2">Booking</h2>
+                <h3 class="main__text--h3">HOME-BOOKING</h3>
+            </div>
+
+            <div class="main__choice-cards-car">
+                <div class="main__all__choice-configuration">
+                    <ul class="main__choice-configuration">
+                        <li class="main__li__text-configuration--h2">
+                            <h2 class="main__text-configuration--h2">
+                                Summary
+                            </h2>
                         </li>
-                        <li>
-                            <a class="footer__text-a" href="/">Privacy Policy</a>
+
+                        <li class="main__text-configuration-together">
+                            <h3 class="main__text-configuration--h3">
+                                SERVICE TYPE
+                            </h3>
+                            <h4 class="main__text-configuration--h4">Hourly</h4>
                         </li>
-                        <li>
-                            <a class="footer__text-a" href="/">Terms of Use</a>
+
+                        <li class="main__text-configuration-together">
+                            <h3 class="main__text-configuration--h3">
+                                PICKUP LOCATION
+                            </h3>
+                            <h4 class="main__text-configuration--h4">
+                                Switzerland Park, Chandragiri
+                            </h4>
+                        </li>
+
+                        <li class="main__text-configuration-together">
+                            <h3 class="main__text-configuration--h3">
+                                DROP OFF LOCATION
+                            </h3>
+                            <h4 class="main__text-configuration--h4">
+                                Switzerland Park, Chandragiri
+                            </h4>
+                        </li>
+
+                        <li class="main__text-configuration-together">
+                            <h3 class="main__text-configuration--h3">
+                                PICKUP DATE, TIME
+                            </h3>
+                            <h4 class="main__text-configuration--h4">
+                                17-05-2025, 8:00
+                            </h4>
+                        </li>
+
+                        <li class="main__text-calculations">
+                            <div class="main__text-container">
+                                <h3 class="main__text-configuration--h3">
+                                    TOTAL DISTANCE
+                                </h3>
+                                <h4 class="main__text-configuration--h4">
+                                    0 km
+                                </h4>
+                            </div>
+
+                            <div class="main__text-container">
+                                <h3 class="main__text-configuration--h3">
+                                    TOTAL TIME
+                                </h3>
+                                <h4 class="main__text-configuration--h4">
+                                    7 h 0 m
+                                </h4>
+                            </div>
                         </li>
                     </ul>
+
+                    <div class="main__text-calculations-result">
+                        <h2 class="main__text-calc">Total</h2>
+                        <h2 class="main__price-calc">$450.00</h2>
+                    </div>
+                </div>
+
+                <ul class="main__cards-car" id="cards-list"></ul>
+            </div>
+
+            <div class="main__add-car-form">
+                <button class="main__add-form-btn">
+                    Add your car
+                    <svg
+                        class="add-form-btn"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 128"
+                        width="20px"
+                        height="20px"
+                    >
+                        <path
+                            d="M 64 6.0507812 C 49.15 6.0507812 34.3 11.7 23 23 C 0.4 45.6 0.4 82.4 23 105 C 34.3 116.3 49.2 122 64 122 C 78.8 122 93.7 116.3 105 105 C 127.6 82.4 127.6 45.6 105 23 C 93.7 11.7 78.85 6.0507812 64 6.0507812 z M 64 12 C 77.3 12 90.600781 17.099219 100.80078 27.199219 C 121.00078 47.499219 121.00078 80.500781 100.80078 100.80078 C 80.500781 121.10078 47.500781 121.10078 27.300781 100.80078 C 7.0007813 80.500781 6.9992188 47.499219 27.199219 27.199219 C 37.399219 17.099219 50.7 12 64 12 z M 64 42 C 62.3 42 61 43.3 61 45 L 61 61 L 45 61 C 43.3 61 42 62.3 42 64 C 42 65.7 43.3 67 45 67 L 61 67 L 61 83 C 61 84.7 62.3 86 64 86 C 65.7 86 67 84.7 67 83 L 67 67 L 83 67 C 84.7 67 86 65.7 86 64 C 86 62.3 84.7 61 83 61 L 67 61 L 67 45 C 67 43.3 65.7 42 64 42 z"
+                        />
+                    </svg>
+                </button>
+                <form class="main__user-info-form">
+                    <ul class="main__form-info-add">
+                        <li class="main__more-info-container">
+                            <h3>Availability:</h3>
+                            <select id="header__lang-sel">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Year of issue:</h3>
+                            <input type="number">
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Mileage:</h3>
+                            <input type="number">
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Color:</h3>
+                            <input type="text">
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Gearbox:</h3>
+                            <select id="header__lang-sel">
+                                <option value="automatic">automatic</option>
+                                <option value="mechanical">mechanical</option>
+                            </select>
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Steering wheel:</h3>
+                            <select id="header__lang-sel">
+                                <option value="left">left</option>
+                                <option value="right">right</option>
+                            </select>
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Body:</h3>
+                            <select id="header__lang-sel">
+                                <option value="minivan">minivan</option>
+                                <option value="sedan">sedan</option>
+                            </select>
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Price:</h3>
+                            <input type="number">
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Image:</h3>
+                            <input type="file">
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Seats:</h3>
+                            <input type="number">
+                        </li>
+                        <li class="main__more-info-container">
+                            <h3>Baggage:</h3>
+                            <input type="number">
+                        </li>
+
+                    </ul>
+
+                    <div class="form-info-add__actions">
+                        <button class="form-info-add__remove">Remove</button>
+                        <button class="form-info-add__submit">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="main__btn-container">
+                <button class="main__btn-left main__btn">
+                    <svg
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"
+                            fill="#0F0F0F"
+                        />
+                    </svg>
+                    <h2 class="main__btn-text-left">Choose Ride Details</h2>
+                </button>
+                <button class="main__btn-right main__btn">
+                    <h2 class="main__btn-text-right">Enter Contact Detals</h2>
+                    <svg
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        transform="rotate(180)"
+                    >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"
+                                fill="#0F0F0F"
+                            ></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="main__partners-container">
+                <a href="/">
+                    <img
+                        class="main__img-partner"
+                        src="./img/Chopard.jpg"
+                        alt="Chopard GENEVE"
+                    />
+                </a>
+                <a href="/">
+                    <img
+                        class="main__img-partner"
+                        src="./img/Geneve.jpg"
+                        alt="GENEVE AEROPORT"
+                    />
+                </a>
+                <a href="/">
+                    <img
+                        class="main__img-partner"
+                        src="./img/Emirates.jpg"
+                        alt="Emirates"
+                    />
+                </a>
+                <a href="/">
+                    <img
+                        class="main__img-partner"
+                        src="./img/Iwc.jpg"
+                        alt="IWS SCHAFFHAUSEN"
+                    />
+                </a>
+                <a href="/">
+                    <img
+                        class="main__img-partner"
+                        src="./img/Cartier.jpg"
+                        alt="Cartier"
+                    />
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container__all">
+                <div class="footer__btn--rug">
+                    <a class="footer__btn-up" id="btnUp" href="#">
+                        <img
+                            class="footer__btn-up__img"
+                            src="./img/arrow-up.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+
+                <div class="footer__container">
+                    <form class="footer__form">
+                        <h2 class="form__text--h2">Subscribe our newsletter</h2>
+                        <h3 class="form__text--h3">
+                            Want to know about our offers first?
+                        </h3>
+                        <div class="footer__input-container">
+                            <input
+                                class="footer__input"
+                                type="email"
+                                placeholder="example@gmail.com"
+                            />
+                            <button class="footer__btn-subscribe">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="footer__img__text-container">
+                        <a class="logo" href="/">
+                            <img
+                                class="footer__logo-img"
+                                src="./img/logo_white.png"
+                                alt="LIMOCROUP"
+                            />
+                        </a>
+
+                        <ul class="footer__text-container">
+                            <li>
+                                <a class="footer__text-a" href="/">Legal</a>
+                            </li>
+                            <li>
+                                <a class="footer__text-a" href="/"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__text-a" href="/"
+                                    >Terms of Use</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__about-us">
+                    <a class="footer__href" href="tel:+12 34 567 89 00">
+                        <svg
+                            width="30px"
+                            height="30px"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M5.11596 12.7268L8.15456 9.08666C8.46255 8.69067 8.61655 8.49267 8.69726 8.27061C8.76867 8.07411 8.79821 7.86486 8.784 7.65628C8.76793 7.42055 8.67477 7.18766 8.48846 6.72187L7.77776 4.94513C7.50204 4.25581 7.36417 3.91116 7.12635 3.68525C6.91678 3.48618 6.65417 3.3519 6.37009 3.29856C6.0477 3.23803 5.68758 3.32806 4.96733 3.50812L3 4.00002C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3122 20.7617 17.952 20.7012 17.6297C20.6478 17.3456 20.5136 17.083 20.3145 16.8734C20.0886 16.6356 19.7439 16.4977 19.0546 16.222L17.4691 15.5878C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4002C15.4877 15.512 15.2854 15.7144 14.8807 16.1191L11.7943 19.1569"
+                                stroke="#000000"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                        <h3 class="footer__text-href">+12 34 567 89 00</h3>
+                    </a>
+                    <a class="footer__href" href="/">
+                        <img
+                            width="30px"
+                            height="30px"
+                            src="./img/Marker-map.png"
+                            alt=""
+                        />
+                        <h3 class="footer__text-href">
+                            ch, des Saules 19, 1800 Vevey, Switzerland
+                        </h3>
+                    </a>
+                    <a class="footer__href" href="mailto:example@gmail.com">
+                        <img
+                            width="30px"
+                            height="30px"
+                            src="./img/Pismo.png"
+                            alt=""
+                        />
+                        <h3 class="footer__text-href">example@gmail.com</h3>
+                    </a>
+                    <a class="footer__href" href="/">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="30px"
+                            height="30px"
+                        >
+                            <path
+                                d="M 12 2 C 6.4860328 2 2 6.4860368 2 12 C 2 17.513963 6.4860328 22 12 22 C 17.513967 22 22 17.513963 22 12 C 22 6.4860368 17.513967 2 12 2 z M 12 3.5 C 16.703308 3.5 20.5 7.2966955 20.5 12 C 20.5 16.703304 16.703308 20.5 12 20.5 C 7.2966924 20.5 3.5 16.703304 3.5 12 C 3.5 7.2966955 7.2966924 3.5 12 3.5 z M 12.474609 4.9902344 A 0.750075 0.750075 0 0 0 11.751953 5.6894531 L 11.251953 11.939453 A 0.750075 0.750075 0 0 0 11.564453 12.609375 L 15.064453 15.109375 A 0.750075 0.750075 0 1 0 15.935547 13.890625 L 12.78125 11.636719 L 13.248047 5.8105469 A 0.750075 0.750075 0 0 0 12.474609 4.9902344 z"
+                            />
+                        </svg>
+                        <h3 class="footer__text-href">
+                            Every Day Around the clock
+                        </h3>
+                    </a>
                 </div>
             </div>
-    
-            <div class="footer__about-us">
-                <a class="footer__href" href="tel:+12 34 567 89 00">
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.11596 12.7268L8.15456 9.08666C8.46255 8.69067 8.61655 8.49267 8.69726 8.27061C8.76867 8.07411 8.79821 7.86486 8.784 7.65628C8.76793 7.42055 8.67477 7.18766 8.48846 6.72187L7.77776 4.94513C7.50204 4.25581 7.36417 3.91116 7.12635 3.68525C6.91678 3.48618 6.65417 3.3519 6.37009 3.29856C6.0477 3.23803 5.68758 3.32806 4.96733 3.50812L3 4.00002C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3122 20.7617 17.952 20.7012 17.6297C20.6478 17.3456 20.5136 17.083 20.3145 16.8734C20.0886 16.6356 19.7439 16.4977 19.0546 16.222L17.4691 15.5878C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4002C15.4877 15.512 15.2854 15.7144 14.8807 16.1191L11.7943 19.1569" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <h3 class="footer__text-href">+12 34 567 89 00</h3>
-                </a>
-                <a class="footer__href" href="/">
-                    <img width="30px" height="30px" src="./img/Marker-map.png" alt="">
-                    <h3 class="footer__text-href">ch, des Saules 19, 1800 Vevey, Switzerland</h3>
-                </a>
-                <a class="footer__href" href="mailto:example@gmail.com">
-                    <img width="30px" height="30px" src="./img/Pismo.png" alt="">
-                    <h3 class="footer__text-href">example@gmail.com</h3>
-                </a>
-                <a class="footer__href" href="/">
-                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px"><path d="M 12 2 C 6.4860328 2 2 6.4860368 2 12 C 2 17.513963 6.4860328 22 12 22 C 17.513967 22 22 17.513963 22 12 C 22 6.4860368 17.513967 2 12 2 z M 12 3.5 C 16.703308 3.5 20.5 7.2966955 20.5 12 C 20.5 16.703304 16.703308 20.5 12 20.5 C 7.2966924 20.5 3.5 16.703304 3.5 12 C 3.5 7.2966955 7.2966924 3.5 12 3.5 z M 12.474609 4.9902344 A 0.750075 0.750075 0 0 0 11.751953 5.6894531 L 11.251953 11.939453 A 0.750075 0.750075 0 0 0 11.564453 12.609375 L 15.064453 15.109375 A 0.750075 0.750075 0 1 0 15.935547 13.890625 L 12.78125 11.636719 L 13.248047 5.8105469 A 0.750075 0.750075 0 0 0 12.474609 4.9902344 z"/></svg>
-                    <h3 class="footer__text-href">Every Day Around the clock</h3>
-                </a>
+
+            <div class="footer__container__btn-text">
+                <h3 class="footer__text-copyright">
+                    Copyright © 2025 The Limousine. All Rights Reserved
+                </h3>
             </div>
-        </div>
-        
-        <div class="footer__container__btn-text">
-           
-    
-            <h3 class="footer__text-copyright">Copyright © 2025 The Limousine. All Rights Reserved</h3>
-        </div>
-    </footer>
+        </footer>
 
-    
-
-    <script src="./code/addCards.js"></script>
-    <script src="./code/btnUp.js"></script>
-    <script src="./code/carInformation.js"></script>
-</body>
+        <script src="./JS/addCards.js"></script>
+        <script src="./JS/btnUp.js"></script>
+        <script src="./JS/carInformation.js"></script>
+        <script src="./JS/addUserCar.js"></script>
+    </body>
 </html>
