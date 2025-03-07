@@ -314,7 +314,7 @@ body{
 
 .main__add-car-form.form--open .main__user-info-form{
     opacity: 1;
-    max-height: 500px;
+    max-height: 600px;
     padding-block: 16px;
 }
 
@@ -322,6 +322,14 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.main__user-info-form__input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: #fff;
+    outline: 0;
 }
 
 

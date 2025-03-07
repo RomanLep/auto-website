@@ -148,69 +148,102 @@
                 <form class="main__user-info-form">
                     <ul class="main__form-info-add">
                         <li class="main__more-info-container">
+                            <h3>Model:</h3>
+                            <input
+                                class="main__user-info-form__input"
+                                name="model"
+                                type="text"
+                            />
+                        </li>
+                        <li class="main__more-info-container">
                             <h3>Availability:</h3>
-                            <select id="header__lang-sel">
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
+                            <select name="availability">
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
                             </select>
                         </li>
                         <li class="main__more-info-container">
                             <h3>Year of issue:</h3>
-                            <input type="number">
+                            <input
+                                class="main__user-info-form__input"
+                                name="year"
+                                type="number"
+                            />
                         </li>
                         <li class="main__more-info-container">
                             <h3>Mileage:</h3>
-                            <input type="number">
+                            <input
+                                class="main__user-info-form__input"
+                                name="mileage"
+                                type="number"
+                            />
                         </li>
                         <li class="main__more-info-container">
                             <h3>Color:</h3>
-                            <input type="text">
+                            <input
+                                class="main__user-info-form__input"
+                                name="color"
+                                type="text"
+                            />
                         </li>
                         <li class="main__more-info-container">
                             <h3>Gearbox:</h3>
-                            <select id="header__lang-sel">
+                            <select name="gearbox">
                                 <option value="automatic">automatic</option>
                                 <option value="mechanical">mechanical</option>
                             </select>
                         </li>
                         <li class="main__more-info-container">
                             <h3>Steering wheel:</h3>
-                            <select id="header__lang-sel">
+                            <select name="steering">
                                 <option value="left">left</option>
                                 <option value="right">right</option>
                             </select>
                         </li>
                         <li class="main__more-info-container">
                             <h3>Body:</h3>
-                            <select id="header__lang-sel">
+                            <select name="body">
                                 <option value="minivan">minivan</option>
                                 <option value="sedan">sedan</option>
                             </select>
                         </li>
                         <li class="main__more-info-container">
                             <h3>Price:</h3>
-                            <input type="number">
+                            <input
+                                class="main__user-info-form__input"
+                                name="price"
+                                type="number"
+                            />
                         </li>
                         <li class="main__more-info-container">
                             <h3>Image:</h3>
-                            <input type="file">
+                            <input
+                                class="main__user-info-form__input"
+                                type="file"
+                            />
                         </li>
                         <li class="main__more-info-container">
                             <h3>Seats:</h3>
-                            <input type="number">
+                            <input
+                                class="main__user-info-form__input"
+                                name="seats"
+                                type="number"
+                            />
                         </li>
                         <li class="main__more-info-container">
                             <h3>Baggage:</h3>
-                            <input type="number">
+                            <input
+                                class="main__user-info-form__input"
+                                name="baggage"
+                                type="number"
+                            />
                         </li>
-
                     </ul>
 
                     <div class="form-info-add__actions">
-                        <button class="form-info-add__remove">Remove</button>
+                        <button class="form-info-add__remove">Clear</button>
                         <button class="form-info-add__submit">Submit</button>
                     </div>
-                    
                 </form>
             </div>
 
@@ -416,9 +449,11 @@
             </div>
         </footer>
 
-        <script src="./JS/addCards.js"></script>
-        <script src="./JS/btnUp.js"></script>
-        <script src="./JS/carInformation.js"></script>
-        <script src="./JS/addUserCar.js"></script>
+        <script src="./js/addCards.js"></script>
+        <script src="./js/btnUp.js"></script>
+        <script src="./js/carInformation.js"></script>
+        <script src="./js/addUserCar.js"></script>
+        <script src="./js/clearForm.js"></script>
+        <script src="./js/carActions.js" type="module"></script>
     </body>
 </html>
